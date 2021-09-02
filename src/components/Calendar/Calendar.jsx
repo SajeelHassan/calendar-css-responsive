@@ -52,7 +52,7 @@ const CalendarMain = () => {
         )
     }
     return (
-        <div className={clsx('bg-white w-100 m-3 p-4', classes.calendarDiv)}>
+        <div className={clsx('bg-white w-100 p-4', classes.calendarDiv)}>
             <FullCalendar
                 plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                 headerToolbar={{

@@ -35,9 +35,10 @@
 @media(max-width:790px){
    .theApp{
     flex-direction: column;
+    align-items: center;
 }
 .appMain{
-    margin:auto;
-    width:100%;
+    margin:0;
+    width:90%;
 }
 }

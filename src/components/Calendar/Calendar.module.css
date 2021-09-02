@@ -1,8 +1,8 @@
 
 .calendarDiv{
     height: 95vh ;
-
     padding:1.25rem;
+    margin:1.25rem;
     border-radius: 15px;
     box-shadow: 0px 3px 10px -3px grey;
     transition: all 0.3s ease-in-out;
@@ -10,5 +10,20 @@
 
 .calendarDiv:hover{
     box-shadow: 0px 3px 16px -3px grey;
+
+}
+@media(max-width:790px){
+   .calendarDiv{
+    margin:0;
+    margin-top:1.25rem;
+    font-size: 0.8rem;
+   }
+
+}
+@media(max-width:350px){
+   .calendarDiv{
+   
+    font-size: 0.6rem;
+   }
 
 }
