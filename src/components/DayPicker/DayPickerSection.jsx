@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import DayPicker, { MomentLocaleUtils } from 'react-day-picker';
+import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import './dayPickerStyles.css';
 import classes from './DayPickerSection.module.css';
@@ -17,7 +17,7 @@ const DayPickerSection = () => {
                 onDayClick={handleDayClick}
                 selectedDays={selectedDay}
                 selectedDay={selectedDay}
-                localeUtils={MomentLocaleUtils}
+                // localeUtils={MomentLocaleUtils}
                 showOutsideDays={true}
                 className={classes.dayPickerCard}
             />

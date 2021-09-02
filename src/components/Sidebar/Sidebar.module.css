@@ -1,12 +1,12 @@
 .sidebar {
     width:9.375rem;
     height: 100vh;
-     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+     position: fixed; 
+  z-index: 1; 
+  top: 0; 
   left: 0;
-   /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+   
+  overflow-x: hidden; 
   padding-top: 20px;
    display: flex;
    flex-direction: column;
@@ -21,7 +21,7 @@ box-shadow: 0px 3px 10px -3px grey;
     color:#464646;
     margin-bottom: 1rem;
 }
-.navLink:active .navIcon{
+.active{
     color:#3788D8;
 }
 .navIcon:hover{
@@ -32,12 +32,11 @@ box-shadow: 0px 3px 10px -3px grey;
 .sidebar {
     width:100vw;
     height: 9.375rem;
-     position: relative; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: unset; /* Stay at the top */
+     position: relative; 
+  z-index: 1; 
+  top: unset; 
   left: unset;
-   /* Black */
-  overflow: unset; /* Disable horizontal scroll */
+  overflow: unset; 
 
 
 }

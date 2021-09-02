@@ -10,7 +10,7 @@ const Sidebar = () => {
             defaultActiveKey="/"
         >
             <Nav.Item className={classes.navItem}>
-                <Nav.Link href="/" className={classes.navLink}> <CalendarWeek className={classes.navIcon} /> </Nav.Link>
+                <Nav.Link href="/" className={classes.navLink}> <CalendarWeek className={clsx(classes.navIcon, classes.active)} /> </Nav.Link>
             </Nav.Item>
             <Nav.Item className={classes.navItem}>
                 <Nav.Link href="/account">

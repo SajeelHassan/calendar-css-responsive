@@ -66,17 +66,10 @@ const CalendarMain = () => {
                 selectable={true}
                 selectMirror={true}
                 dayMaxEvents={true}
-                initialEvents={INITIAL_EVENTS} // alternatively, use the `events` setting to fetch from a feed
+                initialEvents={INITIAL_EVENTS}
                 select={handleDateSelect}
-                eventContent={renderEventContent} // custom render function
-                // eventClick={handleEventClick}
-                eventsSet={handleEvents} // called after events are initialized/added/changed/removed
-                /* you can update a remote database when these fire:
-                eventAdd={function(){}}
-                eventChange={function(){}}
-                eventRemove={function(){}}
-                */
-                className={classes.calendarMain}
+                eventContent={renderEventContent}
+                eventsSet={handleEvents}
                 height='90vh'
                 width='90%'
             />
