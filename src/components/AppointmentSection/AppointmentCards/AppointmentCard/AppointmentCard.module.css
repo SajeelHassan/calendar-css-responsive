@@ -1,0 +1,29 @@
+.card{
+    
+    width:12.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:270px;
+  box-shadow: 0px 3px 10px -3px gray;
+
+
+    padding:10px;
+    margin: 10px auto;
+   
+}
+p{
+    margin:0; 
+    color:gray;
+}
+.card:first-child{
+  margin-top: 0;
+}
+.cardPriceTime{
+  opacity: 0.5;
+  font-size: 0.8rem;
+  transition: opacity 0.3s ease-in-out;
+}
+.card:hover .cardPriceTime{
+  opacity: 1;
+}

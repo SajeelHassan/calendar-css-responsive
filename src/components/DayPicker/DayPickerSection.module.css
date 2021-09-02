@@ -1,0 +1,13 @@
+.dayPickerMain{
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px -3px grey;
+    transition: all 0.3s ease-in-out;
+}
+.dayPickerMain:hover{
+    box-shadow: 0px 3px 16px -3px grey;
+
+}
+.dayPickerCard{
+    margin: 0;
+    width: 100%;
+}

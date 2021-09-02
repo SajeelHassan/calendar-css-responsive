@@ -1,0 +1,48 @@
+.sidebar {
+    width:9.375rem;
+    height: 100vh;
+     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+   /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+box-shadow: 0px 3px 10px -3px grey;
+
+}
+.navIcon{
+    width: 45px;
+    height: 45px;
+    color:#464646;
+    margin-bottom: 1rem;
+}
+.navLink:active .navIcon{
+    color:#3788D8;
+}
+.navIcon:hover{
+    color:#3788D8;
+
+}
+@media(max-width:790px){
+.sidebar {
+    width:100vw;
+    height: 9.375rem;
+     position: relative; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: unset; /* Stay at the top */
+  left: unset;
+   /* Black */
+  overflow: unset; /* Disable horizontal scroll */
+
+
+}
+.navIcon{
+    width: 35px;
+    height: 35px;
+}
+}

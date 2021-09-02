@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+.theApp{
+    display: flex;
+}
+.appMain{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 9.375rem;
+    width:calc(100% - 200px);}
+.dayPickerAndAppointment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media(max-width:1075px){
+    .dayPickerAndAppointment{
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+.appMain{
+    flex-direction: column;
+    justify-content: center;
+
+}
+}
+@media(max-width:830px){
+    .dayPickerAndAppointment{
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media(max-width:790px){
+   .theApp{
+    flex-direction: column;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.appMain{
+    margin:auto;
+    width:100%;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

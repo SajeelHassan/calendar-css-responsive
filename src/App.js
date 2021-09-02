@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import CalendarMain from './components/Calendar/Calendar';
+import DayPickerSection from './components/DayPicker/DayPickerSection';
+import Sidebar from './components/Sidebar/Sidebar';
+import clsx from 'clsx';
+import AppointmentSection from './components/AppointmentSection/AppointmentSection';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={clsx('theApp')}>
+      <Sidebar />
+      <div className='appMain'>
+        <CalendarMain />
+        <div className='dayPickerAndAppointment'>
+          <DayPickerSection />
+          <AppointmentSection />
+        </div>
+      </div>
     </div>
   );
 }
